@@ -11,6 +11,11 @@ Write an if statement that writes Hello World in different languages (i.e. if th
 The Grade Assigner
 
 Write an if statement that gives users a score (A, B, C, D, E or F) based on the test results
+
+The Pluralizer
+
+Write an if statement that works with a noun and a number. Make the noun plural if necessary!!
+
 */
 
 //First
@@ -60,3 +65,13 @@ if ( grade === "A"){
 }else if ( grade === "F"){
   console.log("Fail");
 }else {}
+
+//Fourth
+
+var num = 10;
+
+if (num > 0 && num <= 1) {
+  console.log("noun");
+} else {
+  console.log("nouns");
+}
