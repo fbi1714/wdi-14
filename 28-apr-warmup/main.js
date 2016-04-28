@@ -1,17 +1,13 @@
-var inputNum = 15;
-var outputNum = '';
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>My first exercise</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>Press CMD + OPT + J to see the output</p>
 
-  if ( inputNum % 3 === 0){
-    outputNum += "Pling";
-   }
-   if ( inputNum % 5 === 0){
-     outputNum += "Plong";
-    }
-    if ( inputNum % 7 === 0){
-      outputNum += "Plang";
-     }
-    if (outputNum.length === 0 ){
-        outputNum = inputNum;
-    }
-
-  console.log(outputNum);
+</body>
+</html>
