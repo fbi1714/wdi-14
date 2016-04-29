@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fTeller();
 ageCalc();
 lSupply();
@@ -64,3 +65,8 @@ function fTeller() {
           console.log("You will be a "+jobTitle+" in "+geoloc+", and married to "+partner+" with "+nchilds+" kids.");
 
 }
+=======
+console.log( "First line" );
+console.log( "Second line" );
+console.log( "Third line" );
+>>>>>>> 3ac5b622e1a97bd15d1e2203fd2ae348804f6407
