@@ -107,3 +107,4 @@ trainSystem("L", "8th", "N", "8th");
 trainSystem("L", "8th", "N", "Times Square");
 trainSystem("6", "Astor Place", "N", "Times Square");
 trainSystem("L", "1st", "6", "Astor Place");
+trainSystem("L", "1st", "L", "1st");
