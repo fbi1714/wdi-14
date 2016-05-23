@@ -25,7 +25,7 @@ cat.style.top  = "0px";
 cat.style.left = "0px";
 var leftTimer = null;
 var newCatTimer = null;
-var amoutOfPixels = 100;
+var amoutOfPixels = 10;
 var catShow;
 var nIntervId;
 var currentLeftValue;
@@ -55,20 +55,24 @@ var catWalk = function () {
       }
       cat.style.left = newLeftValue + "px";
 
-      if ( currentLeftValue > window.innerWidth - 300){
+      if ( newLeftValue > window.innerWidth - 300){
 //         cat.style.left="0px";
         cat.style.transform = "scaleX(-1)"
         direction = -1;
         return;
-      } else if (currentLeftValue <= 0) {
+      } else if (newLeftValue <= 0) {
         cat.style.transform = "scaleX(1)"
         direction = 1;
         return;
-      } else if (((currentLeftValue+(296/2)) - window.innerWidth / 2) < amoutOfPixels && direction === -1) {
+      } else if ((newLeftValue < window.innerWidth / 2) && (newLeftValue + 296/2 > window.innerWidth/2) && direction === -1) {
 
            stopCat();
            newCat.src = "http://www.cutecatgifs.com/wp-content/uploads/2013/12/Facepalm.gif";
-           catShow = window.setTimeout(hideCat, 7000);
+           var restart = function() {
+                 hideCat();
+                 leftTimer();
+           }
+           catShow = window.setTimeout(restart, 2000);
            return;
 
       }
@@ -79,5 +83,6 @@ var hideCat = function(){
       newCat.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
       return;
 }
+
 
 leftTimer();
